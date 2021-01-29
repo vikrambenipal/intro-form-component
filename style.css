@@ -1,0 +1,25 @@
+.app-container {
+    display: flex;
+    flex-direction: row;
+}
+.content-container {
+    border: 2px solid black;
+}
+.form-container {
+    border: 2px solid black;
+    width: 357px;
+    margin: 0 auto;
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    width: 200px;
+}
+.submit {
+    width: 200px;
+}
