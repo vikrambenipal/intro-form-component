@@ -1,15 +1,38 @@
+@font-face {
+    font-family: 'poppins-bold';
+    src: url(Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'poppins-medium';
+    src: url(Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url(Poppins/Poppins-SemiBold.ttf);
+}
+h1 {
+    font-family: 'poppins-bold';
+    color: white;
+}
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: #FF7979;
+}
 .app-container {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 30%;
 }
 .content-container {
     border: 2px solid black;
 }
 .form-container {
     border: 2px solid black;
-    width: 357px;
+    width: 540px;
     margin: 0 auto;
     text-align: center;
+    background-color: white;
 }
 .form {
     display: flex;
@@ -22,4 +45,10 @@
 }
 .submit {
     width: 200px;
+}
+@media all and (max-width: 900px) {
+    .app-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
