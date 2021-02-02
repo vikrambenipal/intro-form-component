@@ -10,6 +10,10 @@
     font-family: 'poppins-semibold';
     src: url(Poppins/Poppins-SemiBold.ttf);
 }
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: #FF7979;
+}
 h1 {
     font-family: 'poppins-bold';
     color: white;
@@ -18,44 +22,14 @@ h1 {
     font-family: 'poppins-medium';
     color: white;
 }
-body {
-    background-image: url(images/bg-intro-desktop.png);
-    background-color: #FF7979;
-}
-.app-container {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 30%;
-}
-.content-container {
-    border: 2px solid black;
-}
-.form-container {
-    border: 2px solid black;
-    width: 540px;
-    margin: 0 auto;
-    text-align: center;
-}
-.trial-container {
-    background-color: #5E54A4;
-}
-.form {
+/* .form-container {
+    background-color: white;
+} */
+
+#form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
 }
-.input {
-    width: 200px;
-}
-.submit {
-    width: 200px;
-}
-@media all and (max-width: 900px) {
-    .app-container {
-        display: flex;
-        flex-direction: column;
-    }
+.input{
+    margin-bottom: 20px;
 }
