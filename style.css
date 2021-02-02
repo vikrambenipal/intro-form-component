@@ -10,21 +10,38 @@
     font-family: 'poppins-semibold';
     src: url(Poppins/Poppins-SemiBold.ttf);
 }
+@font-face {
+    font-family: 'poppins-regular';
+    src: url(Poppins/Poppins-Regular.ttf);
+}
+.bold{
+    font-family: 'poppins-bold';
+}
 body {
     background-image: url(images/bg-intro-desktop.png);
     background-color: #FF7979;
 }
 h1 {
     font-family: 'poppins-bold';
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.29px;
     color: white;
+    text-align: center;
 }
 .content-container p {
     font-family: 'poppins-medium';
     color: white;
+    text-align: center;
 }
-/* .form-container {
+.trial-container {
+    color: white;
+    font-family: 'poppins-regular';
+    text-align: center;
+}
+.form-container {
     background-color: white;
-} */
+}
 
 #form {
     display: flex;
@@ -32,4 +49,14 @@ h1 {
 }
 .input{
     margin-bottom: 20px;
+}
+.terms{
+    color: #BAB7D4;
+    font-size: 11px;
+    line-height: 21px;
+    text-align: center;
+    font-family: 'poppins-medium';
+}
+.terms .bold {
+    color: #FF7979;
 }
