@@ -137,3 +137,53 @@ input{
 .terms .bold {
     color: #FF7979;
 }
+
+@media all and (min-width: 1050px){
+    h1{
+        text-align: left;
+        font-size: 48px;
+        letter-spacing: -0.52px;
+        line-height: 55px;
+        width: 80%;
+    }
+    .app-container{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+    .content-container p{
+        text-align: left;
+    }
+    .rhs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 160px;
+        margin-right: 50px;
+    }
+    .form-container{
+        width: 540px;
+    }
+    .trial-container{
+        width: 540px;
+        height: 60px;
+    }
+    .trial-container p{
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 1500px){
+    h1{
+        width: 100%;
+    }
+}
