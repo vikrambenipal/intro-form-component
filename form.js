@@ -8,25 +8,19 @@ const lnError = document.getElementById('ln-error');
 const emError = document.getElementById('em-error');
 const pwError = document.getElementById('pw-error');
 
-console.log(firstName.placeholder);
 
-// prevent page from submitting
 form.addEventListener('submit', (e) => {
-
-    if(firstName.value === '' || firstName.value == null){
-        e.preventDefault();
-        fnError.innerText = "First Name cannot be empty";
-    }
-    if(lastName.value === '' || lastName.value == null){
-        e.preventDefault();
-        lnError.innerText = "Last Name cannot be empty";
-    }
-    if(email.value === '' || email.value == null){
-        e.preventDefault();
-        emError.innerText = "Looks like this is not an email";
-    }
-    if(password.value === '' || password.value == null){
-        e.preventDefault();
-        pwError.innerText = "Password cannot be empty";
-    }
+    // prevent page from submitting
+    e.preventDefault();
+    CheckError(firstName, fnError);
+    CheckError(lastName, lnError);
+    CheckError(password, pwError);
+    CheckError(email, emError);
 })
+
+function CheckError(input, error){
+    const placeholder = input.placeholder;
+    if((input.value == '' || input.value == null) && placeholder != "Email Address"){
+        error.innerText = placeholder + " cannot be empty";
+    }
+}

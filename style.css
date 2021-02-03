@@ -70,6 +70,13 @@ h1 {
     margin: auto;
     padding-top: 30px;
 }
+.error-msg {
+    margin-bottom: 20px;
+    margin-top: -13px;
+}
+.error-style {
+    border: 5px solid red;
+}
 .submit {
     color: white;
     border: none;
