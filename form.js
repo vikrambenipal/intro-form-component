@@ -8,6 +8,9 @@ const lnError = document.getElementById('ln-error');
 const emError = document.getElementById('em-error');
 const pwError = document.getElementById('pw-error');
 
+function emailIsValid (email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+  }
 
 form.addEventListener('submit', (e) => {
     // prevent page from submitting
@@ -20,7 +23,18 @@ form.addEventListener('submit', (e) => {
 
 function CheckError(input, error){
     const placeholder = input.placeholder;
-    if((input.value == '' || input.value == null) && placeholder != "Email Address"){
-        error.innerText = placeholder + " cannot be empty";
-    }
+    
+    if((input.value == '' || input.value == null)){
+        if(placeholder == "Email Address"){
+            console.log("1");
+            error.innerText = "Looks like this is not an email";
+            input.classList.add('error-style');
+        }else{
+            error.innerText = placeholder + " cannot be empty";
+            input.classList.add('error-style');
+        }
+    }else{
+        input.classList.remove('error-style');
+        error.innerText = '';
+    }      
 }
