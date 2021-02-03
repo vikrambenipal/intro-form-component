@@ -26,7 +26,6 @@ function CheckError(input, error){
     
     if((input.value == '' || input.value == null)){
         if(placeholder == "Email Address"){
-            console.log("1");
             error.innerText = "Looks like this is not an email";
             input.classList.add('error-style');
         }else{
